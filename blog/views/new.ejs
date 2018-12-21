@@ -1,0 +1,24 @@
+<% include partials/header %>
+
+<div >
+	<div class="ui main text container segment">
+	<div class="ui huge header">New Posts</div>
+	<form class="ui form" action="/blogs" method="POST">
+	<div class="field">
+		<label>Title</label>
+		<input type="text" name="title" placeholder="title">
+	</div>
+		<div class="field">
+		<label>Image URL</label>
+		<input type="text" name="image" placeholder="image url">
+	</div>
+		<div class="field">
+		<label>Blog Content</label>
+		<textarea name="desc"></textarea>
+	</div>
+		<a href="/blogs"><input class="ui green basic button" type="submit"></a>
+	</form>
+</div>
+</div>
+
+<% include partials/footer %>
