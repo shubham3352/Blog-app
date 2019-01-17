@@ -7,7 +7,7 @@ var methodOverride=require('method-override');
 app.use(methodOverride("_method"));
 app.set("view engine","ejs");
 app.use(bodyParser.urlencoded({extended: true}));
-mongoose.connect("mongodb://localhost/blogs_app");
+mongoose.connect("mongodb://shubham:03092001s@ds159184.mlab.com:59184/blog_app");
 app.use(express.static("public"));
 
 var blogSchema=new mongoose.Schema({
